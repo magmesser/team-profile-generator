@@ -1,9 +1,9 @@
-const Manager = require("../team/Manager");
-const Engineer = require("../team/Engineer");
-const Intern = require("../team/Intern");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateHTML = require("../dist/generateHTML");
+const generateHTML = require("./src/generateHTML");
 // empty array for team members
 const team = [];
 
@@ -154,7 +154,7 @@ function internQuestions() {
 
 // write to file function 
 function teamComplete(){
-  fs.writeFile("results.html", generateHTML(team), (err) =>
+  fs.writeFile("./dist/results.html", generateHTML(team), (err) =>
         err
           ? console.error(err)
           : console.log("Your Team HTML file has been created!")

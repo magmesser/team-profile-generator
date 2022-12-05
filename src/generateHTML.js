@@ -64,18 +64,18 @@ const generateTeam = (team) => {
 
   htmlTeamArray.push(
     team
-      .filter(member => member.job() === "Manager")
+      .filter(member => member.getRole() === "Manager")
       .map((manager) => generateManager(manager))
   );
   htmlTeamArray.push(
     team
-      .filter(member => member.job() === "Engineer")
+      .filter(member => member.getRole() === "Engineer")
       .map((engineer) => generateEngineer(engineer))
       .join("")
   );
   htmlTeamArray.push(
     team
-      .filter(member => member.job() === "Intern")
+      .filter(member => member.getRole() === "Intern")
       .map((intern) => generateIntern(intern))
       .join("")
   );

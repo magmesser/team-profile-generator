@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #646FB0;
+    color: #2B2166;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #2B2166;
+    color: #A0AEEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow:  10px 10px 14px -3px #2B2166;
+    margin: 10px 20px;
+    line-height: 1.5rem;
+    color: #2B2166;
+}
+
+a {
+    text-decoration: none;
+    color: #646FB0
+}
+
+a:hover {
+    color: #A0AEEB;
+}

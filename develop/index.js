@@ -3,7 +3,7 @@ const Engineer = require("../team/Engineer");
 const Intern = require("../team/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateHTML = require("../assets/generateHTML");
+const generateHTML = require("../dist/generateHTML");
 // empty array for team members
 const team = [];
 
